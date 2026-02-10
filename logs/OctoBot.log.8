@@ -1,0 +1,25 @@
+2026-02-09 18:50:39 INFO   OctoBot Launcher     cli.py:320      Version : 2.0.16
+2026-02-09 18:50:39 INFO   OctoBot Launcher     cli.py:106      Running self-hosted OctoBot on Windows:10:AMD64 with python [Python 3.10.11]
+2026-02-09 18:50:39 DEBUG  sentry_tracker       logging_util.py:183      Error tracker disabled
+2026-02-09 18:50:39 INFO   OctoBot Launcher     cli.py:123      Loading config files...
+2026-02-09 18:50:39 ERROR  root                 logger.py:47         File "D:\Everything Everything\Everything Github\OctoBot-Prediction-Market\start.py", line 20, in <module>
+    octobot_prediction_market.cli.main()
+  File "D:\Everything Everything\Everything Github\OctoBot-Prediction-Market\octobot_prediction_market\cli.py", line 25, in main
+    octobot.cli.main(
+  File "C:\Users\Big B\AppData\Roaming\Python\Python310\site-packages\octobot\cli.py", line 571, in main
+    args.func(args)
+  File "C:\Users\Big B\AppData\Roaming\Python\Python310\site-packages\octobot\cli.py", line 488, in <lambda>
+    parser.set_defaults(func= lambda args: start_octobot(args, default_config_file))
+  File "C:\Users\Big B\AppData\Roaming\Python\Python310\site-packages\octobot\cli.py", line 328, in start_octobot
+    config, is_first_startup = _create_startup_config(
+  File "C:\Users\Big B\AppData\Roaming\Python\Python310\site-packages\octobot\cli.py", line 139, in _create_startup_config
+    distribution = configuration_manager.get_distribution(config.config)
+  File "C:\Users\Big B\AppData\Roaming\Python\Python310\site-packages\octobot\configuration_manager.py", line 225, in get_distribution
+    return enums.OctoBotDistribution(config[common_constants.CONFIG_DISTRIBUTION])
+  File "C:\Program Files\Python310\lib\enum.py", line 385, in __call__
+    return cls.__new__(cls, value)
+  File "C:\Program Files\Python310\lib\enum.py", line 710, in __new__
+    raise ve_exc
+NoneType: None
+2026-02-09 18:50:39 ERROR  root                 logger.py:48       <class 'ValueError'>: 'prediction_market' is not a valid OctoBotDistribution
+NoneType: None

@@ -1,0 +1,45 @@
+{
+    "accepted_terms": false,
+    "backtesting": {
+        "files": []
+    },
+    "community": {
+        "local_data_identifier": "f9a1e367f5c5ea5d1c0df99ee4b379755f560d3eea2f04b21197181d743b7bad",
+        "supabase.auth.token": ""
+    },
+    "distribution": "default",
+    "exchanges": {
+        "binance": {
+            "api-key": "your-api-key-here",
+            "api-password": "your-api-password-here",
+            "api-secret": "your-api-secret-here",
+            "enabled": false,
+            "exchange-type": "spot"
+        },
+        "binanceus": {
+            "api-key": "your-api-key-here",
+            "api-password": "your-api-password-here",
+            "api-secret": "your-api-secret-here",
+            "enabled": true,
+            "exchange-type": "spot"
+        }
+    },
+    "notification": {
+        "global-info": true,
+        "notification-type": [
+            "web"
+        ],
+        "other": true,
+        "price-alerts": true,
+        "trades": true,
+        "trading-script-alerts": true
+    },
+    "profile": "default",
+    "services": {
+        "web": {
+            "auto-open-in-web-browser": true,
+            "password": "",
+            "require-password": false
+        }
+    }
+}

@@ -1,0 +1,2 @@
+[console_scripts]
+OctoBot_Prediction_Market = octobot_prediction_market.cli:main
