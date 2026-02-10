@@ -13,6 +13,21 @@
 #
 #  You should have received a copy of the GNU General Public
 #  License along with OctoBot. If not, see <https://www.gnu.org/licenses/>.
+# Patch OctoBotDistribution to include PREDICTION_MARKET
+try:
+    import octobot.enums
+    from enum import Enum
+    
+    class OctoBotDistribution(Enum):
+        DEFAULT = "default"
+        MARKET_MAKING = "market_making"
+        PREDICTION_MARKET = "prediction_market"
+        
+    octobot.enums.OctoBotDistribution = OctoBotDistribution
+    print("Patched OctoBotDistribution with PREDICTION_MARKET")
+except Exception as e:
+    print(f"Failed to patch OctoBotDistribution: {e}")
+
 import octobot_prediction_market.cli
 
 
